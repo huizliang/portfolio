@@ -5,6 +5,7 @@ Hi! My name is Hui and I'm a former educator and nonprofit mananger transitionin
 Links
 
 * https://public.tableau.com/app/profile/hui.liang/vizzes
+* https://www.linkedin.com/in/hzliang
 
 Coursework Completed:
 
