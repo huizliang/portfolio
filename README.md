@@ -4,7 +4,7 @@ Hui Liang
 
 https://www.linkedin.com/in/hzliang/
 
-Former educator transitioning to data analystics
+Newly transitioning to data analystics
 
 Coursework Completed:
 
