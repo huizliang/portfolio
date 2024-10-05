@@ -1,6 +1,6 @@
 # Data Analytics Portfolio
 
-Hi! My name is Hui ('Hoo-ee) and I'm a former educator and nonprofit mananger transitioning into data analysis. I look forward to learning as much as I can about data analytics and connecting with others in the data profession.
+Hi! My name is Hui ('Hoo-ee') and I'm a former educator and nonprofit mananger transitioning into data analysis. I look forward to learning as much as I can about data analytics and connecting with others in the data profession.
 
 Links
 
