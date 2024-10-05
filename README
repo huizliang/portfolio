@@ -1,7 +1,11 @@
-echo "# portfolio" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/huizliang/portfolio.git
-git push -u origin main
+# Data Analytics Portfolio <a href="https://www.datascienceportfol.io/hliang">(Website)</a>
+
+Hui Liang
+
+https://www.linkedin.com/in/hzliang/
+
+Former educator transitioning to data analystics
+
+Coursework Completed:
+
+* Google Data Analystics Professional Certificate (September 2024)
