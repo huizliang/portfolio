@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='120102+ (12months_tripdata)' inline='true' name='federated.1gzcnyg07m451s19tyunf0f4avhk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='12months_tripdata' name='excel-direct.0r20icd177k4aj12zzjr00h80dba'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/huizl/OneDrive/Desktop/Case Study/Cyclistic 12 months/xls/12months_tripdata.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='120102+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='datetime' name='ride_length' />
+            <column datatype='integer' name='day_of_week' />
+            <column datatype='string' name='name_of_day' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='120102' table='[&apos;120102$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='string' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='string' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='030405' table='[&apos;030405$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0607' table='[&apos;0607$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='08' table='[&apos;08$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0910' table='[&apos;0910$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='11' table='[&apos;11$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='120102+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='datetime' name='ride_length' />
+            <column datatype='integer' name='day_of_week' />
+            <column datatype='string' name='name_of_day' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='120102' table='[&apos;120102$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='string' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='string' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='030405' table='[&apos;030405$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0607' table='[&apos;0607$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='08' table='[&apos;08$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0910' table='[&apos;0910$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='11' table='[&apos;11$&apos;]' type='table'>
+            <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='datetime' name='ride_length' ordinal='4' />
+              <column datatype='integer' name='day_of_week' ordinal='5' />
+              <column datatype='string' name='name_of_day' ordinal='6' />
+              <column datatype='string' name='start_station_name' ordinal='7' />
+              <column datatype='integer' name='start_station_id' ordinal='8' />
+              <column datatype='string' name='end_station_name' ordinal='9' />
+              <column datatype='integer' name='end_station_id' ordinal='10' />
+              <column datatype='string' name='member_casual' ordinal='11' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ride_id]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>ride_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rideable_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[rideable_type]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>rideable_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>started_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[started_at]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>started_at</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ended_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ended_at]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>ended_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_length</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ride_length]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>ride_length</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name_of_day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name_of_day]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>name_of_day</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>member_casual</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[member_casual]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>member_casual</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[120102+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ride_duration' datatype='integer' datatype-customized='true' name='[Calculation_1101974602361434112]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;,[started_at],[ended_at])' />
+      </column>
+      <column datatype='string' hidden='true' name='[Sheet]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='120102' datatype='table' name='[__tableau_internal_object_id__].[120102_610FB62D703644D0B90EFA0955C264AA]' role='measure' type='quantitative' />
+      <column caption='Day Of Week' datatype='integer' name='[day_of_week]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='string' name='[end_station_id]' role='dimension' type='nominal' />
+      <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+      <column caption='Ended At' datatype='datetime' name='[ended_at]' role='dimension' type='ordinal' />
+      <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+      <column caption='Name Of Day' datatype='string' name='[name_of_day]' role='dimension' type='nominal' />
+      <column caption='Ride Id' datatype='string' name='[ride_id]' role='dimension' type='nominal' />
+      <column caption='Ride Length' datatype='datetime' hidden='true' name='[ride_length]' role='dimension' type='ordinal' />
+      <column caption='Rideable Type' datatype='string' name='[rideable_type]' role='dimension' type='nominal' />
+      <column caption='Start Station Id' datatype='string' name='[start_station_id]' role='dimension' type='nominal' />
+      <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+      <column caption='Started At' datatype='datetime' name='[started_at]' role='dimension' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/huizl/AppData/Local/Temp/TableauTemp/#TableauTemp_13jttj809cfemq1euf7il1f3cwfn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/04/2024 02:53:41 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ride_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ride_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ride_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3364767</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rideable_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rideable_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rideable_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>started_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[started_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>started_at</remote-alias>
+              <ordinal>2</ordinal>
+              <family>120102+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>751912</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ended_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ended_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ended_at</remote-alias>
+              <ordinal>3</ordinal>
+              <family>120102+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>780689</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_of_week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day_of_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_of_week</remote-alias>
+              <ordinal>4</ordinal>
+              <family>120102+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name_of_day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name_of_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name_of_day</remote-alias>
+              <ordinal>5</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1286</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2593</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1182</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_id</remote-alias>
+              <ordinal>9</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2401</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>member_casual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[member_casual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>member_casual</remote-alias>
+              <ordinal>10</ordinal>
+              <family>120102+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[120102_610FB62D703644D0B90EFA0955C264AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='ride_id' />
+        <field-sort-custom-order field='rideable_type' />
+        <field-sort-custom-order field='started_at' />
+        <field-sort-custom-order field='ended_at' />
+        <field-sort-custom-order field='ride_length' />
+        <field-sort-custom-order field='Calculation_1101974602361434112' />
+        <field-sort-custom-order field='day_of_week' />
+        <field-sort-custom-order field='name_of_day' />
+        <field-sort-custom-order field='start_station_name' />
+        <field-sort-custom-order field='start_station_id' />
+        <field-sort-custom-order field='end_station_name' />
+        <field-sort-custom-order field='end_station_id' />
+        <field-sort-custom-order field='member_casual' />
+        <field-sort-custom-order field='Sheet' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='120102' id='120102_610FB62D703644D0B90EFA0955C264AA'>
+            <properties context=''>
+              <relation all='true' name='120102+' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='ride_id' />
+                  <column datatype='string' name='rideable_type' />
+                  <column datatype='datetime' name='started_at' />
+                  <column datatype='datetime' name='ended_at' />
+                  <column datatype='datetime' name='ride_length' />
+                  <column datatype='integer' name='day_of_week' />
+                  <column datatype='string' name='name_of_day' />
+                  <column datatype='string' name='start_station_name' />
+                  <column datatype='string' name='start_station_id' />
+                  <column datatype='string' name='end_station_name' />
+                  <column datatype='string' name='end_station_id' />
+                  <column datatype='string' name='member_casual' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='120102' table='[&apos;120102$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='string' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='string' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='030405' table='[&apos;030405$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='integer' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='integer' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0607' table='[&apos;0607$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='integer' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='integer' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='08' table='[&apos;08$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='integer' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='integer' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='0910' table='[&apos;0910$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='integer' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='integer' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0r20icd177k4aj12zzjr00h80dba' name='11' table='[&apos;11$&apos;]' type='table'>
+                  <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='2'>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='datetime' name='ride_length' ordinal='4' />
+                    <column datatype='integer' name='day_of_week' ordinal='5' />
+                    <column datatype='string' name='name_of_day' ordinal='6' />
+                    <column datatype='string' name='start_station_name' ordinal='7' />
+                    <column datatype='integer' name='start_station_id' ordinal='8' />
+                    <column datatype='string' name='end_station_name' ordinal='9' />
+                    <column datatype='integer' name='end_station_id' ordinal='10' />
+                    <column datatype='string' name='member_casual' ordinal='11' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E839B272-B921-44E8-ABCE-97C02A7C2EAD}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5F536EE-4EF5-44DF-9E63-CD804797B93F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
