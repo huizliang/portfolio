@@ -1,4 +1,5 @@
-CREATE TABLE testing
+-- CREATE TABLE
+CREATE TABLE 2020_0607_tripdata
 (
 ride_id VARCHAR(255),
 rideable_type VARCHAR(255),
@@ -13,3 +14,8 @@ end_station_name VARCHAR (255),
 end_station_id VARCHAR(255),
 member_casual VARCHAR(255)
 );
+
+-- LOAD DATA INFILE
+LOAD DATA INFILE '2020_0607_tripdata.csv' INTO TABLE 2020_0607_tripdata
+FIELDS TERMINATED BY ','
+IGNORE 1 LINES;
