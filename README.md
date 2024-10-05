@@ -2,7 +2,8 @@
 
 Hui Liang
 
-https://www.linkedin.com/in/hzliang/
+* https://www.linkedin.com/in/hzliang/
+* https://public.tableau.com/app/profile/hui.liang/vizzes
 
 Former educator and non-profit manager transitioning to data analystics
 
