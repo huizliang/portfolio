@@ -42,3 +42,7 @@ Used Excel to clean each table by performing the following steps:
  * Used Excel to create pivot tables (see Cyclistic_pivot_table.png)
  * Performed summary statistics in MySQL
  * UNION all tables and used Tableau to create <a href="https://https://public.tableau.com/app/profile/hui.liang/viz/12months_Cyclistic_bikedata/Dashboard1">dashboard</a> 
+
+**Share** 
+
+**Act**
