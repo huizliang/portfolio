@@ -1,9 +1,3 @@
-# Data Analytics Portfolio <a href="https://www.datascienceportfol.io/hliang">(Website)</a>
+# Data Analytics Portfolio
 
-Hui Liang
-
-* https://public.tableau.com/app/profile/hui.liang/vizzes
-
-Coursework Completed:
-
-* Google Data Analystics Professional Certificate (September 2024)
+Here you'll find all of the case studies that I am working on
