@@ -1,0 +1,13 @@
+-- UNION ALL
+SELECT *
+FROM 
+(
+SELECT *
+FROM 202006_tripdata 
+UNION ALL
+SELECT *
+FROM 202007_tripdata
+UNION ALL
+SELECT *
+)
+a
