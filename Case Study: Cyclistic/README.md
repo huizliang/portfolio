@@ -29,13 +29,16 @@ Motivate International Inc. under this <a href="https://https://divvybikes.com/d
 
 **Process** 
 
-Using Excel, I cleaned each table by performing the following steps:
+Used Excel to clean each table by performing the following steps:
 * check for blanks and replace values when possible
 * deleted rows with blanks if essential information was missing
 * check and delete duplications
 * delete non-essential columns e.g. start_lat, end_late, start_lng, end_lng
 * add column ride_length and calculate length of each ride
 * detele rides with ride_length over 99 hours. I believe these were outliers as Cyclistic does offer memberships that rent bikes for mulitple days
+* reformatted all dates to yyyy-m-d h:mm:ss for MySQL
 
 **Analyze** 
- * Used Excel to create pivot tables (see pivot_table.png)
+ * Used Excel to create pivot tables (see Cyclistic_pivot_table.png)
+ * Performed summary statistics in MySQL
+ * UNION all tables and used Tableau to create <a href="https://https://public.tableau.com/app/profile/hui.liang/viz/12months_Cyclistic_bikedata/Dashboard1">dashboard</a> 
