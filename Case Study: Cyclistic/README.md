@@ -35,14 +35,19 @@ Used Excel to clean each table by performing the following steps:
 * check and delete duplications
 * delete non-essential columns e.g. start_lat, end_late, start_lng, end_lng
 * add column ride_length and calculate length of each ride
-* detele rides with ride_length over 99 hours. I believe these were outliers as Cyclistic does offer memberships that rent bikes for mulitple days
 * reformatted all dates to yyyy-m-d h:mm:ss for MySQL
 
 **Analyze** 
- * Used Excel to create pivot tables (see Cyclistic_pivot_table.png)
- * Performed summary statistics in MySQL
- * UNION all tables and used Tableau to create <a href="https://https://public.tableau.com/app/profile/hui.liang/viz/12months_Cyclistic_bikedata/Dashboard1">dashboard</a> 
+ As I begun to analyze the data, I noticed a few issues with the data. One was that there were many bike rides with ride lengths that were under a minutes and had the same started_at station name and ended_at station names. This leads me to conclude that these bikes were not really taken out for rides. Therefore, I decided to exclude these types of data from the analysis. On the other hand, I also noticed many bike rides with unsually long ride lengths, some of which were multiple days. Since I don't have anyone real to ask about this information, I took a look at Divvybikes's website (the company that Cyclistic recieved its data from), and I was able to see that a bike can only be taken out for up to 24 hours. Once a bike is taken out for more than 24 hours, it will incur a lost or stolen bike fee. For this reason, I decided not to exclude these types of data as well.
+ 
+Once I had all of the data that I wanted to include for the analysis, I created pivot charts for all of the tables in Excel (see Cyclistic_pivot_table.png). First, I wanted to know how averge ride lengths for casual and member rides would differ. Second, I wanted to know if there were patterns in the days of the week that bikes were taken out. Next, I used my MySQL to perform the same calculations because I wanted to verify that the calculations done in Excel would match and they did.
+
+Finally, I looked for trends in the data. Here were my findings: 
+* The average ride length for casual rides was 36.90 minutes.
+* The average ride lenght for member rides was 15.82 minutes.
+* The top two most popular days for casual rides were Saturay and Sunday.
+* The top two most popular days for member rides were Saturay and Friday.
 
 **Share** 
-
+href="https://https://public.tableau.com/app/profile/hui.liang/viz/12months_Cyclistic_bikedata/Dashboard1">dashboard</a>
 **Act**
