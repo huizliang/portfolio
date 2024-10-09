@@ -1,6 +1,6 @@
 # Data Analytics Portfolio
 
-Hi! My name is Hui and I'm a former educator and nonprofit mananger transitioning into data analysis. I look forward to learning as much as I can about data analytics and connecting with others in the data profession.
+Hui Liang
 
 Links
 
@@ -10,5 +10,5 @@ Links
 Coursework Completed:
 
 * Google Data Analytics Professional Certificate (September 2024)
-* Google Data Analytics Capstone Project (in progress)
+* Google Data Analytics Capstone Project (October 2024)
 
