@@ -1,4 +1,5 @@
 --https://divvy-tripdata.s3.amazonaws.com/index.html
+--files were too large to be combined into one table. Instead, I combined two months into each table and performed analysis on each one with the following queries
 
 --create new table
 CREATE TABLE 2020607_tripdata
@@ -57,3 +58,27 @@ WHERE member_casual LIKE 'c%'
 SELECT avg(ride_duration)
 FROM 2020_0607_tripdata
 WHERE member_casual LIKE 'c%'
+
+-- AVG ride duration of member rides in June
+SELECT *
+FROM 2020_0607_tripdata
+WHERE substring(started_at,6,2) = 06;
+
+SELECT avg(ride_duration)
+FROM
+(SELECT *
+FROM 2020_0607_tripdata
+WHERE substring(started_at,6,2) = 06) AS junetrips
+WHERE member_casual LIKE 'm%';
+
+-- AVG ride duration of casual rides in June
+SELECT *
+FROM 2020_0607_tripdata
+WHERE substring(started_at,6,2) = 06;
+
+SELECT avg(ride_duration)
+FROM
+(SELECT *
+FROM 2020_0607_tripdata
+WHERE substring(started_at,6,2) = 06) AS junetrips
+WHERE member_casual LIKE 'c%';
